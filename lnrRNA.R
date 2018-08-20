@@ -1,4 +1,4 @@
-## By following Lao Wang instruction.
+## Following Lao Wang's instruction.
 ## Once having the selected genes, multiply the betas to the corresponding gene value in the dataset to get
 ## a total risk value. Then, it gets split into high and low or 1 and 0 for all the rows at the same time.
 ## Using this new data to run survdiff function. Find the p values for all the combinations of one-less selected
