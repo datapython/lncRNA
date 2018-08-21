@@ -19,9 +19,7 @@ selectlnr <- function(){
   f = file.choose()
   if (file_ext(f) == 'csv') {dat <- read.csv(f, header = T, check.names=F)}
   if (file_ext(f) == 'tsv') {dat <- read.table(f, header = T, sep = '\t', check.names=F)}
-  else {
-    'Please save your file in csv or tsv format before proceeding!'
-  }
+  else {'Please save your file in csv or tsv format before proceeding!'}
 
   # Make sure the colnames complying with R convention.
   colnames(dat) <- gsub("[-: ]", "_", colnames(dat))
