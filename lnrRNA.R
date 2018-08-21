@@ -84,7 +84,7 @@ selectlnr <- function(){
 }
 
 
-## Double click the below code to run.
+## After running the above function, double click the following code to analyze your dataset.
 
 selectlnr()
 
