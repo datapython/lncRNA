@@ -71,10 +71,10 @@ selectlnr <- function(){
     drop_gene <- selected_betas[,1][min_pvalue_ind]
     selected_betas <- selected_betas[- min_pvalue_ind, ]  
     dat3 <- dat3[, -(min_pvalue_ind + 2)]  
-    min_p_gene[j, ] = c(j, drop_gene, min(pvalues))
+    min_p_gene[1, ] = c(j, drop_gene, min(pvalues))
 
     all_dropped <- rbind(all_dropped, dropped_genes)
-    min_pvalues <- rbind(min_pvalues, na.omit(min_p_gene))
+    min_pvalues <- rbind(min_pvalues, min_p_gene)
    }
    write.csv(all_dropped, paste0(format(Sys.time(), "%Y%m%d_%H%M%S_"),'All_Dropped_Genes.csv'))
    write.csv(min_pvalues, paste0(format(Sys.time(), "%Y%m%d_%H%M%S_"),'Min_p_gene.csv'))
