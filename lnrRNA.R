@@ -10,7 +10,7 @@ options(warn=-1)
 
 setwd(choose.dir())
 
-selectlnr <- function(){
+selectlnc <- function(){
   if (!require(tools)){install.packages('tools')}
   if (!require(survival)) {install.packages('survival')}
   library(tools)
@@ -86,5 +86,5 @@ selectlnr <- function(){
 
 ## After running the above function, double click the following code to analyze your dataset.
 
-selectlnr()
+selectlnc()
 
