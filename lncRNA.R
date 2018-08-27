@@ -1,8 +1,8 @@
 ## Following Lao Wang's instruction.
-## Once having the selected genes, multiply the betas to the corresponding gene value in the dataset to get
-## a total risk value. Then, it gets split into high and low or 1 and 0 for all the rows at the same time.
-## Using this new data to run survdiff function. Find the p values for all the combinations of one-less selected
-## genes in each cycle and take the model with smallest p value go on to the next cycle. Again with one-less gene to 
+## Once having the selected genes, multiplying the betas to the corresponding gene value to get
+## a total risk, which then gets split into high and low or 1 and 0 for all the rows.
+## The new data are used to run survdiff function to find the p values for all the combinations of one-less selected
+## genes in each cycle. The first model with smallest p value go on to the next cycle. Again with one-less gene to 
 ## find the model with smallest p value... till the last a couple of genes stay in the model.
 ## 2018-8-16
 
